@@ -1,3 +1,3 @@
-# Projetos em html e css apenas
+# Projetos em HTML / CSS
 
-Meus projetos de aprendizado desenvolvidos em HTML e CSS
+Esses são alguns projetos de aprendizado desenvolvidos por mim em HTML / CSS
