@@ -1,0 +1,23 @@
+#home {
+	background: #ffc107;
+	color: white;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+footer{
+	padding: 10px 0;
+}
+
+@media (max-width: 768px){
+	.sasuke{
+		margin: 0 auto;
+	}
+
+	.naruto{
+		transform: scale(0.75);
+	}
+}

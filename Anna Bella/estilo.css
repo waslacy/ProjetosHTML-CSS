@@ -1,0 +1,42 @@
+body{
+    background-image: url(imgs/fundo.png);
+    font: 16px Arial, Helvetica, sans-serif;
+}
+
+.principal{
+    width: 900px;
+}   
+
+.nav{
+    padding: 18px;
+    text-transform: uppercase;
+    background-color: #c5c5b2;
+}
+
+.nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #4b566a;
+    margin: 5px;
+}
+
+.content{
+    background-color: #e8e8d9;
+    padding: 10px;
+}
+
+.content h1{
+    color: #828271;
+    font-size: 1.2em;
+}
+
+.content img{
+    border: 10px solid #c3c3ae;
+}
+
+.footer{
+    text-align: center;
+}
+
+
+
