@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #F2D602;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.btn{
+    background-color: #F2D602;
+    color: #181818;
+    font-size: 1.2em;
+    padding: 10px 24px;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.btn:hover{
+    background-color: #ebcf00;
+    color: #000;
+}
+
+section{
+    padding: 60px 0;
+}
+
+section.black{
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+.titulo{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* header */
+
+#header-site{
+    background-color: #0e0e0e;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+#header-site .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.site-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.site-nav ul li{
+    margin: 0 10px;
+}
+
+.sat-nav ul li:last-child{
+    margin: 0 0 0 10px;
+}
+
+/* banner */
+
+section#banner{
+    background: url(banner.jpg) center center;
+    min-height: 500px;
+    background-size: cover;
+    padding: 88px 0 0 0;
+}
+
+section .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+}
+
+#banner .container{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner h1, #banner h2{
+    color: #fff;
+}
+
+#banner h1{
+    font-size: 3.5em;
+}
+
+#banner h2{
+    font-size: 2.1em;
+    margin-bottom: 20px;
+}
+
+#banner .btn{
+    font-size: 1.5em;
+}
+
+/* quem somos */
+
+#quem-somos .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#quem-somos .img img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+#quem-somos .content{
+    margin-left: 60px;
+}
+
+#quem-somos .content p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#quem-somos .content .btn{
+    border-radius: 10px;
+}
+
+/* portfolio */
+
+#portfolio .titulo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foto{
+    width: calc(33% - 20px);
+    margin: 10px 10px;
+    background: url('quem-somos.jpg') center center;
+    background-size: cover;
+    border-radius: 20px;
+    height: 200px;
+    transition: .3s linear;
+}
+
+.foto .img-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: transparent;
+}
+
+.foto:hover{
+    transform: scale(1.1);
+}
+
+.foto .img-overlay:hover{
+    color: #F2D602;
+    background-color: transparent;
+}
+
+/* contato */
+
+#contato .titulo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contato .infos-contato{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#contato .info{
+    width: calc(33% - 20px);
+    margin: 0 10px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebcf00;
+    border-radius: 20px;
+}
+
+#contato .info i{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#contato .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#contato input, #contato textarea{
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #0e0e0e;
+}
+
+#contato .form .button-form{
+    display: flex;
+    justify-content: end;
+}
+
+#contato .form button{
+    background-color: #F2D602;
+    color: #181818;
+    font-size: 1.2em;
+    padding: 10px 24px;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+#contato .form button:hover{
+    background-color: #ebcf00;
+    color: #000;
+}
+
+/* footer site */
+
+.rodape-site{
+    background: url(banner.jpg) center center;
+    background-size: cover;
+    font-size: 0.6em;
+    color: #fff;
+    text-align: center;
+}
+
+.rodape-site .overlay{
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
