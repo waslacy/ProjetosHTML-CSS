@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+$color-blue: #158ED4;
+$color-blue-light: #80D0FF;
+$color-blue-dark: #0473B8;
+$color-yellow-dark: #D48A2A;
+$color-yellow-light: #fcb65a;
+
+$font-primary: 'Poppins';
+$font-secondary: 'Roboto';
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

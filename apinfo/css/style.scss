@@ -1,0 +1,321 @@
+@import "./imports";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-secondary;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-primary;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+button,
+.btn {
+    padding: 12px 32px;
+    background-color: $color-blue;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+
+    &:hover {
+        background-color: $color-blue-dark;
+    }
+}
+
+.btn-yellow {
+    background-color: transparent;
+    border: 2px solid $color-yellow-light;
+    color: $color-yellow-light;
+
+    &:hover {
+        background-color: $color-yellow-light;
+        color: #111;
+    }
+}
+
+#header-site {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 2px 0 10px rgba($color: #000000, $alpha: 0.5);
+
+    .container {
+        @include flex(space-between, center, row);
+
+        .nav-site ul {
+            @include flex(center, center, row);
+            gap: 20px;
+            list-style: none;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            li a {
+                text-decoration: none;
+                color: #111;
+                font-weight: 400;
+                font-size: 1.1em;
+                transition: 0.2s linear;
+
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+
+        .nav-site-mobile {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+    }
+}
+
+#home {
+    padding: 100px 0 0 0;
+    min-height: 300px;
+    background: url(../src/banner-home.jpg) center center;
+    background-size: cover;
+
+    .overlay {
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        min-height: 300px;
+        width: 100%;
+    }
+
+    .container {
+        @include flex(flex-start, center, row);
+        min-height: 300px;
+
+        h1 {
+            background: transparent;
+            color: $color-yellow-light;
+            font-size: 2.6em;
+        }
+    }
+}
+
+#busca {
+    padding: 30px 0;
+    background-color: $color-blue-dark;
+
+    .container {
+        .form-group {
+            @include flex(center, center, row);
+
+            label {
+                color: #fff;
+                font-size: 1.2em;
+                margin-right: 20px;
+            }
+
+            input {
+                padding: 14px 20px;
+                width: 600px;
+                border-radius: 5px 0 0 5px;
+                outline: none;
+                border: none;
+            }
+
+            button.btn-yellow {
+                border-radius: 0 5px 5px 0;
+                @media screen and (max-width: 768px) {
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+    }
+}
+
+#vantagens {
+    .container {
+        @include flex(space-between, center, row);
+
+        @media screen and (max-width: 768px) {
+            @include flex(flex-start, center, column);
+            gap: 20px;
+        }
+
+        .vantagem {
+            width: calc(33% - 40px);
+            text-align: center;
+            padding: 30px 40px;
+            background-color: $color-blue-light;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px rgba($color: #666, $alpha: 0.5);
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            i {
+                margin-bottom: 20px;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+#vagas {
+    .container {
+        @include flex(space-between, flex-start, row);
+        gap: 60px;
+
+        @media screen and (max-width: 768px) {
+            @include flex(flex-start, flex-start, column);
+        }
+
+        .left-column {
+            min-width: 350px;
+            padding: 30px 40px;
+            background-color: $color-blue-dark;
+            border-radius: 20px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            h2 {
+                color: $color-yellow-light;
+                text-align: center;
+                font-size: 1.6em;
+                margin-bottom: 40px;
+            }
+
+            .form-group {
+                @include flex(inherit, inherit, column);
+                gap: 10px;
+                margin-bottom: 25px;
+
+                label {
+                    color: #fff;
+                    font-size: 1.3em;
+                }
+
+                input {
+                    padding: 10px 16px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                }
+
+                .salario {
+                    @include flex(flex-start, center, row);
+                    gap: 10px;
+                }
+
+                .options {
+                    @include flex(space-between, inherit, row);
+
+                    div {
+                        @include flex(inherit, center, row);
+
+                        label {
+                            font-size: 1em;
+                            margin-left: 5px;
+                        }
+
+                        input {
+                            all: unset;
+                            border: 1px solid $color-yellow-light;
+                            width: 1em;
+                            height: 1em;
+                            border-radius: 3px;
+                            color: #111;
+                            display: inline-block;
+
+                            &:checked {
+                                background-color: $color-yellow-light;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .div-btn {
+                @include flex(center, center, row);
+                margin-top: 40px;
+            }
+        }
+
+        .right-column {
+            @include flex(flex-start, flex-start, column);
+            gap: 20px;
+
+            @media screen and (max-width: 768px) {
+                @include flex(flex-start, center, column);
+            }
+
+            h2 {
+                font-size: 2.4em;
+                margin-bottom: 20px;
+            }
+
+            .vaga {
+                @include flex(flex-start, flex-start, column);
+
+                h3 {
+                    font-size: 1.4em;
+                }
+
+                h4 {
+                    font-size: 1em;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    margin: 10px 0 15px 0;
+                    color: #666;
+                }
+            }
+
+            .divisoria {
+                margin: 15px 0 10px;
+                display: block;
+                width: 80%;
+                background-color: $color-blue-light;
+                height: 1px;
+            }
+        }
+    }
+}
+
+#footer-site {
+    background: url(../src/banner-home.jpg) center center;
+    background-size: cover;
+
+    .overlay {
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .container {
+        @include flex(center, center, row);
+
+        h4 {
+            color: #fff;
+        }
+    }
+}

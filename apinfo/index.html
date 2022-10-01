@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>APinfo - Vagas de Emprego</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <header id="header-site">
+            <div class="container">
+                <a href="index.html"
+                    ><img src="src/logo.png" alt="Logo empresa"
+                /></a>
+
+                <nav class="nav-site">
+                    <ul>
+                        <li><a href="#">Profissionais</a></li>
+                        <li><a href="#">Empresas</a></li>
+                        <li><a href="#">Informação</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="nav-site-mobile">
+                    <button><i class="fa-solid fa-bars"></i></button>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home">
+            <div class="overlay">
+                <div class="container">
+                    <h1>
+                        O ponto de encontro<br />
+                        dos profissionais de informática
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="busca">
+            <div class="container">
+                <div class="form-group">
+                    <label for="busca">Buscar por vagas</label>
+                    <input
+                        type="text"
+                        placeholder="Digite sua busca aqui... palavras chave, ou o codigo da vaga, ou do currículo"
+                    />
+                    <button class="btn-yellow">
+                        <i class="fa-solid fa-magnifying-glass"></i> Buscar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="vantagens">
+            <div class="container">
+                <div class="vantagem">
+                    <i class="fa-solid fa-list"></i>
+
+                    <p>
+                        Novas vagas ao longo de todo o dia. Pesquise
+                        oportunidades para sua carreira
+                    </p>
+                </div>
+
+                <div class="vantagem">
+                    <i class="fa-solid fa-file-invoice"></i>
+
+                    <p>
+                        Inclua seu Curriculum grátis por tempo ilimitado e
+                        concorra a todas as vagas
+                    </p>
+                </div>
+
+                <div class="vantagem">
+                    <i class="fa-solid fa-question"></i>
+
+                    <p>
+                        Tire suas dúvidas e também responda a dúvidas de outros
+                        usuários, participe!!!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vagas">
+            <div class="container">
+                <div class="left-column">
+                    <h2>Filtre as vagas</h2>
+
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="palavras-chave">Palavras chave</label>
+                            <input
+                                type="text"
+                                name="palavras-chave"
+                                placeholder="Digites as palavras chave"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="local">Localização</label>
+                            <input
+                                type="text"
+                                name="local"
+                                placeholder="Região, Estado, Cidade"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salario">Pretensão salarial</label>
+                            <div class="salario">
+                                <label for="salario">R$</label>
+                                <input
+                                    type="text"
+                                    name="salario"
+                                    placeholder="Pretensão Salarial"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Vagas inclusivas</label>
+                            <div class="options">
+                                <div>
+                                    <input type="checkbox" name="PcD" />
+                                    <label for="PcD">PcD</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="lgbtqia+" />
+                                    <label for="lgbtqia+">lgbtqia+</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="elas" />
+                                    <label for="elas">Para elas</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="div-btn">
+                            <button class="btn-yellow">Filtrar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="right-column">
+                    <h2>Vagas de emprego</h2>
+
+                    <div class="vaga">
+                        <h3>Vaga Programador Júnior PHP</h3>
+                        <h4>R$3.000,00</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic perferendis exercitationem rem ipsa iusto
+                            quas, odit error in repellat sequi, perspiciatis
+                            debitis alias autem obcaecati vel sed qui adipisci
+                            quia?
+                        </p>
+                        <span>Válido até: 06/10/2022</span>
+                        <button>Quero me candidatar!</button>
+                    </div>
+
+                    <span class="divisoria"></span>
+
+                    <div class="vaga">
+                        <h3>Vaga Programador Júnior PHP</h3>
+                        <h4>R$3.000,00</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic perferendis exercitationem rem ipsa iusto
+                            quas, odit error in repellat sequi, perspiciatis
+                            debitis alias autem obcaecati vel sed qui adipisci
+                            quia?
+                        </p>
+                        <span>Válido até: 06/10/2022</span>
+                        <button>Quero me candidatar!</button>
+                    </div>
+
+                    <span class="divisoria"></span>
+
+                    <div class="vaga">
+                        <h3>Vaga Programador Júnior PHP</h3>
+                        <h4>R$3.000,00</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic perferendis exercitationem rem ipsa iusto
+                            quas, odit error in repellat sequi, perspiciatis
+                            debitis alias autem obcaecati vel sed qui adipisci
+                            quia?
+                        </p>
+                        <span>Válido até: 06/10/2022</span>
+                        <button>Quero me candidatar!</button>
+                    </div>
+
+                    <span class="divisoria"></span>
+
+                    <div class="vaga">
+                        <h3>Vaga Programador Júnior PHP</h3>
+                        <h4>R$3.000,00</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic perferendis exercitationem rem ipsa iusto
+                            quas, odit error in repellat sequi, perspiciatis
+                            debitis alias autem obcaecati vel sed qui adipisci
+                            quia?
+                        </p>
+                        <span>Válido até: 06/10/2022</span>
+                        <button>Quero me candidatar!</button>
+                    </div>
+
+                    <span class="divisoria"></span>
+
+                    <div class="vaga">
+                        <h3>Vaga Programador Júnior PHP</h3>
+                        <h4>R$3.000,00</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Hic perferendis exercitationem rem ipsa iusto
+                            quas, odit error in repellat sequi, perspiciatis
+                            debitis alias autem obcaecati vel sed qui adipisci
+                            quia?
+                        </p>
+                        <span>Válido até: 06/10/2022</span>
+                        <button>Quero me candidatar!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer-site">
+            <div class="overlay">
+                <div class="container">
+                    <h4>Desenvolvido por Waslacy</h4>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
